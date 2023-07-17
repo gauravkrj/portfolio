@@ -4,7 +4,9 @@ These icons will be used in the Contact component to display social media icons 
 elements. Additionally, the code is importing the `React` object from the `react` library, which is
 necessary for creating React components. Lastly, the code is importing a CSS file named
 `contact.css` which contains styles specific to the Contact component. */
-import React, { useState } from "react";
+import React, { useState ,useRef } from "react";
+import emailjs from '@emailjs/browser';
+
 import {
   FaEnvelopeOpen,
   FaPhoneSquareAlt,
@@ -25,7 +27,24 @@ const Contact = () => {
  a function called `setFromState` to update the state. The initial value of `formState` is an object
  with properties `name`, `email`, `message`, and `subject`, all initialized with empty strings. This
  state is used to store the values entered by the user in the contact form. */
-  const [formState, setFromState] = useState({
+ const form = useRef();
+
+ const sendEmail = (e) => {
+   e.preventDefault();
+
+   emailjs.sendForm('service_yuwq89o', 'template_e0yfavf', form.current, 'wVunrdg4JWJrWY63h')
+     .then((result) => {
+         console.log(result.text);
+         console.log("message sent");
+        
+        }, (error) => {
+         console.log(error.text);
+     });
+ };
+ 
+ 
+ 
+ const [formState, setFromState] = useState({
     name: "",
     email: "",
     message: "",
@@ -96,13 +115,13 @@ const Contact = () => {
 /**
  * The handleSubmit function sets an error message and then clears it after a delay of 5 seconds.
  */
-  const handleSubmit = () => {
+  /*const handleSubmit = () => {
     setErrorMessage("In development mode for contact please use the email provided instead");
    setTimeout(() => {
     console.log(setTimeout)
     setErrorMessage("")
   }, 5000);
-  }
+  }*/
 
 
   
@@ -158,7 +177,7 @@ const Contact = () => {
             </a>
           </div>
         </div>
-        <form className="contact__form">
+        <form ref={form} onSubmit={sendEmail} className="contact__form">
           <div className="form__input-group">
             <div className="form__input-div">
               <input
@@ -204,16 +223,13 @@ const Contact = () => {
             ></textarea>
           </div>
           
-            <span  className="button" onClick={handleSubmit}>
+            <span  className="button" onClick={sendEmail}>
               Send Message
               <span className="button__icon contact__button-icon">
                 <FiSend />
               </span>
             </span>
-            <div className="errorHolder">
-            { errorMessage && (<p className="errorMessage">{errorMessage}</p>)}
-           
-          </div>
+            
         </form>
       </div>
     </section>
@@ -221,3 +237,9 @@ const Contact = () => {
 };
 
 export default Contact;
+
+/*
+<div className="errorHolder">
+            { errorMessage && (<p className="errorMessage">{errorMessage}</p>)}
+           
+          </div>*/

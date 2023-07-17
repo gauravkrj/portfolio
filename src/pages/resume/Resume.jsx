@@ -3,7 +3,7 @@
 `Resume` component. */
 import React from "react";
 import { FaDownload } from "react-icons/fa";
-import CV from "../../assets/CV Kristiyan Tefov.pdf"
+import CV from "../../assets/Gaurav resume.pdf"
 import Info from "../../components/info/Info";
 import ResumeItem from "../../components/resumeitem/ResumeItem";
 import Skills from "../../components/skils/Skills";

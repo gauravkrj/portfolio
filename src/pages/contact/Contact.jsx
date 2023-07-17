@@ -155,23 +155,23 @@ const Contact = () => {
               <FaPhoneSquareAlt className="info__icon" />
               <div>
                 <span className="info__title">Call me</span>
-                <a href="tel:07306786666">
+                <a href="tel:+919163424075">
                   <h4 className="info__desc">+91 9163424075</h4>
                 </a>
               </div>
             </div>
           </div>
           <div className="contact__socials">
-            <a href="https://github.com/gauravkrj" className="contact__social-link">
+            <a href="https://github.com/gauravkrj" className="contact__social-link" target="_blank">
               <FaGithub />
             </a>
-            <a href="https://twitter.com/Gauravkrj" className="contact__social-link">
+            <a href="https://twitter.com/Gauravkrj" className="contact__social-link" target="_blank">
               <FaTwitter />
             </a>
             
             <a
               href="https://www.linkedin.com/in/gaurav-kumar-jha-029a501bb/"
-              className="contact__social-link"
+              className="contact__social-link" target="_blank"
             >
               <FaLinkedin />
             </a>
@@ -223,7 +223,7 @@ const Contact = () => {
             ></textarea>
           </div>
           
-            <span  className="button" onClick={sendEmail}>
+            <span target="/" className="button" onClick={sendEmail}>
               Send Message
               <span className="button__icon contact__button-icon">
                 <FiSend />

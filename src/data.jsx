@@ -13,16 +13,7 @@ import { FiFileText, FiUser, FiExternalLink } from 'react-icons/fi';
 
 import Work1 from './assets/project-1.jpg';
 import Work2 from './assets/project-2.jpg';
-import Work3 from './assets/project-3.jpg';
-import Work4 from './assets/project-4.jpg';
-import Work5 from './assets/project-5.jpg';
-import Work6 from './assets/project-6.jpg';
-import Work7 from './assets/project-7.jpg';
-import Work8 from './assets/project-8.jpg';
-import Work9 from './assets/project-9.jpg';
-import Work10 from './assets/project-10.jpg';
-import Work11 from './assets/project-11.jpg';
-import Work12 from './assets/project-12.jpg';
+
 
 import Theme1 from './assets/purple.png';
 import Theme2 from './assets/red.png';
@@ -117,8 +108,8 @@ export const personalInfo = [
 
   {
     id: 9,
-    title: 'Github',
-    description: 'Gauravkrj',
+    title: 'Github: ',
+    description: 'gauravkrj.github.com',
   },
 
   {
@@ -168,7 +159,7 @@ export const resume = [
     id: 2,
     category: 'experience',
     icon: <FaBriefcase />,
-    year: 'September 2022',
+    year: 'December 2022',
     title: 'Web Developer <span> Young Minds Publishing</span>',
     desc: 'Web Development'},
 
@@ -176,7 +167,7 @@ export const resume = [
     id: 3,
     category: 'experience',
     icon: <FaBriefcase />,
-    year: '2011 - 2016',
+    year: '2021 - 2023',
     title: 'Freelancer <span> UpWork · Fiver · Freelancer </span>',
     desc: 'Web Development & Designing - UI & UX'
   },
@@ -290,11 +281,12 @@ export const portfolio = [
     ],
   },
 
+
   {
-    id: 2,
+    id: 1,
     img: Work2,
-    title: 'MyLittleWebShop',
-    link: 'https://mylittlewebshop.herokuapp.com/login',
+    title: 'Weather Appilcation',
+    link: 'https://gauravkrj.github.io/weather-app/',
     details: [
       {
         icon: <FiFileText />,
@@ -304,314 +296,25 @@ export const portfolio = [
       {
         icon: <FiUser />,
         title: 'Client : ',
-        desc: 'University of Birmingham',
+        desc: 'My Pesonal Project',
       },
       {
         icon: <FaCode />,
         title: 'Language : ',
-        desc: 'JS,CSS,HTML',
+        desc: 'Js,CSS,HTML',
       },
       {
         icon: <FiExternalLink />,
         title: 'Link To : ',
-        link: 'https://github.com/kristiyantefov/MyLittleWebShop',
+        link: 'https://github.com/gauravkrj/weather-app',
         repo: 'Repository'
       },
     ],
   },
 
-  {
-    id: 3,
-    img: Work3,
-    title: 'WeatherApp',
-    link: 'https://kristiyantefov.github.io/WeatherApp/',
-    details: [
-      {
-        icon: <FiFileText />,
-        title: 'Project : ',
-        desc: 'Website',
-      },
-      {
-        icon: <FiUser />,
-        title: 'Client : ',
-        desc: 'University of Birmingham',
-      },
-      {
-        icon: <FaCode />,
-        title: 'Language : ',
-        desc: 'JS,CSS,HTML',
-      },
-      {
-        icon: <FiExternalLink />,
-        title: 'Link To : ',
-        link: 'https://github.com/kristiyantefov/WeatherApp',
-        repo: 'Repository'
-      },
-    ],
-  },
+  
 
-  {
-    id: 4,
-    img: Work4,
-    title: 'Techblogium',
-    link: 'https://techblogium.herokuapp.com/homepage',
-    details: [
-      {
-        icon: <FiFileText />,
-        title: 'Project : ',
-        desc: 'Website',
-      },
-      {
-        icon: <FiUser />,
-        title: 'Client : ',
-        desc: 'University of Birmingham',
-      },
-      {
-        icon: <FaCode />,
-        title: 'Language : ',
-        desc: 'JS,CSS,HTML,SQL',
-      },
-      {
-        icon: <FiExternalLink />,
-        title: 'Link To : ',
-        link: 'https://github.com/kristiyantefov/Techblogium',
-        repo: 'Repository'
-      },
-    ],
-  },
-  {
-    id: 5,
-    img: Work5,
-    title: 'First Portfolio',
-    link: 'https://kristiyantefov.github.io/Kris/',
-    details: [
-      {
-        icon: <FiFileText />,
-        title: 'Project : ',
-        desc: 'Website',
-      },
-      {
-        icon: <FiUser />,
-        title: 'Client : ',
-        desc: 'University of Birmingham',
-      },
-      {
-        icon: <FaCode />,
-        title: 'Language : ',
-        desc: 'JS,CSS,HTML',
-      },
-      {
-        icon: <FiExternalLink />,
-        title: 'Link To : ',
-        link: 'https://github.com/kristiyantefov/Kris',
-        repo: 'Repository'
-      },
-    ],
-  },
-
-  {
-    id: 6,
-    img: Work6,
-    title: 'Horiseon',
-    link: 'https://kristiyantefov.github.io/Horiseon/',
-    details: [
-      {
-        icon: <FiFileText />,
-        title: 'Project : ',
-        desc: 'Website',
-      },
-      {
-        icon: <FiUser />,
-        title: 'Client : ',
-        desc: 'University of Birmingham',
-      },
-      {
-        icon: <FaCode />,
-        title: 'Language : ',
-        desc: 'JS,CSS,HTML',
-      },
-      {
-        icon: <FiExternalLink />,
-        title: 'Link To : ',
-        link: 'https://github.com/kristiyantefov/Horiseon',
-        repo: 'Repository'
-      },
-    ],
-  },
-  {
-    id: 7,
-    img: Work7,
-    title: 'Note-Taker',
-    link: 'https://fakenote.herokuapp.com/',
-    details: [
-      {
-        icon: <FiFileText />,
-        title: 'Project : ',
-        desc: 'Website',
-      },
-      {
-        icon: <FiUser />,
-        title: 'Client : ',
-        desc: 'University of Birmingham',
-      },
-      {
-        icon: <FaCode />,
-        title: 'Language : ',
-        desc: 'JS,CSS,HTML',
-      },
-      {
-        icon: <FiExternalLink />,
-        title: 'Link To : ',
-        link: 'https://github.com/kristiyantefov/Note-Taker',
-        repo: 'Repository'
-      },
-    ],
-  },
-  {
-    id: 8,
-    img: Work8,
-    title: 'Password-Generator',
-    link: 'https://github.com/kristiyantefov/Password-Generator',
-    details: [
-      {
-        icon: <FiFileText />,
-        title: 'Project : ',
-        desc: 'Website',
-      },
-      {
-        icon: <FiUser />,
-        title: 'Client : ',
-        desc: 'University of Birmingham',
-      },
-      {
-        icon: <FaCode />,
-        title: 'Language : ',
-        desc: 'JS,CSS,HTML',
-      },
-      {
-        icon: <FiExternalLink />,
-        title: 'Link To : ',
-        link: 'https://github.com/kristiyantefov/Password-Generator',
-        repo: 'Repository'
-      },
-    ],
-  },
-  {
-    id: 9,
-    img: Work9,
-    title: 'TechQuiz',
-    link: 'https://kristiyantefov.github.io/TechQuiz/',
-    details: [
-      {
-        icon: <FiFileText />,
-        title: 'Project : ',
-        desc: 'Web Application',
-      },
-      {
-        icon: <FiUser />,
-        title: 'Client : ',
-        desc: 'University of Birmingham',
-      },
-      {
-        icon: <FaCode />,
-        title: 'Language : ',
-        desc: 'JS,CSS,HTML',
-      },
-      {
-        icon: <FiExternalLink />,
-        title: 'Link To : ',
-        link: 'https://github.com/kristiyantefov/TechQuiz',
-        repo: 'Repository'
-      },
-    ],
-  },
-  {
-    id: 10,
-    img: Work10,
-    title: 'WorkSchedule',
-    link: 'https://kristiyantefov.github.io/WorkSchedule/',
-    details: [
-      {
-        icon: <FiFileText />,
-        title: 'Project : ',
-        desc: 'Web Application',
-      },
-      {
-        icon: <FiUser />,
-        title: 'Client : ',
-        desc: 'University of Birmingham',
-      },
-      {
-        icon: <FaCode />,
-        title: 'Language : ',
-        desc: 'JS,CSS,HTML',
-      },
-      {
-        icon: <FiExternalLink />,
-        title: 'Link To : ',
-        link: 'https://github.com/kristiyantefov/WorkSchedule',
-        repo: 'Repository'
-      },
-    ],
-  },
-  {
-    id: 11,
-    img: Work11,
-    title: 'README-Generator',
-    link: 'https://github.com/kristiyantefov/README-Generator',
-    details: [
-      {
-        icon: <FiFileText />,
-        title: 'Project : ',
-        desc: 'Program',
-      },
-      {
-        icon: <FiUser />,
-        title: 'Client : ',
-        desc: 'University of Birmingham',
-      },
-      {
-        icon: <FaCode />,
-        title: 'Language : ',
-        desc: 'JS',
-      },
-      {
-        icon: <FiExternalLink />,
-        title: 'Link To : ',
-        link: 'https://github.com/kristiyantefov/README-Generator',
-        repo: 'Repository'
-      },
-    ],
-  },
-  {
-    id: 12,
-    img: Work12,
-    title: 'Employee-Tracker',
-    link: 'https://github.com/kristiyantefov/Employee-Tracker',
-    details: [
-      {
-        icon: <FiFileText />,
-        title: 'Project : ',
-        desc: 'Program',
-      },
-      {
-        icon: <FiUser />,
-        title: 'Client : ',
-        desc: 'University of Birmingham',
-      },
-      {
-        icon: <FaCode />,
-        title: 'Language : ',
-        desc: 'JS,SQL,CMD',
-      },
-      {
-        icon: <FiExternalLink />,
-        title: 'Link To : ',
-        link: 'https://github.com/kristiyantefov/Employee-Tracker',
-        repo: 'Repository'
-      },
-    ],
-  },
+  
 ];
 
 export const themes = [
